@@ -1,6 +1,7 @@
 .header {
   &__wrapper {
     position: absolute;
+    z-index: 10;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -22,7 +23,7 @@
   }
 
   &__logo-img {
-    width: 60px;
+    width: 30px;
 
     img {
       width: 100%;
