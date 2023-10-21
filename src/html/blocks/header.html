@@ -1,13 +1,40 @@
 <header class="header">
   <div class="overlay"></div>
-  <div class="container">
-    <div class="header__row">
-      <div class="logo">Logo</div>
-      <button class="mobile-nav-btn">
-        <div class="nav-icon"></div>
-      </button>
+  <div class="wrapper">
+    <div class="header__wrapper">
+      <div class="header__logo">
+        <a class="header__logo-link" href="#!">
+          <div class="header__logo-img">
+            <img src="./img/svg/logo.svg" alt="Логотип" />
+          </div>
+          <div class="header__logo-text">
+            <span class="header__logo-title">Лапки в тепле</span>
+            <span class="header__logo-subtitle"
+              >Приют для бездомных животных в Екатеринбурге</span
+            >
+          </div>
+        </a>
+      </div>
+
+      <nav class="nav" id="menu">
+        <ul class="nav__menu">
+          <li class="nav__item nav__item-active">О приюте</li>
+          <li class="nav__item">
+            <a class="nav__link" href="./pets.html">Наши животные</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#help">Помощь приюту</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#footer">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="hamburger" id="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
     </div>
   </div>
 </header>
-
-@@include('mobile-nav.html')

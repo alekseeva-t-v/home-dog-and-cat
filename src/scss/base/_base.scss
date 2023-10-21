@@ -1,3 +1,10 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -6,4 +13,29 @@ body {
   background-color: var(--page-bg);
   color: var(--text-color);
   font-family: var(--font-main);
+}
+
+button,
+button:active,
+button:focus {
+  outline-style: none;
+  outline-width: 0px;
+  cursor: pointer;
+  box-shadow: none;
+}
+
+.wrapper {
+  width: 1220px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.stop-scrolling {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.stop-scrolling-modal {
+  height: 100vh;
+  overflow: hidden;
 }
